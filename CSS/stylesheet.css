@@ -1,0 +1,284 @@
+@font-face {
+    font-family: 'proximal-nova-light';
+    font-weight: normal;
+    font-style: normal;
+    
+    src: url('../fonts/Mark Simonson - Proxima Nova Thin-webfont.woff') format('woff'),
+        url('../fonts/Mark Simonson - Proxima Nova Thin-webfont.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'proximal-nova-regular';
+    font-weight: normal;
+    font-style: normal;
+    
+    src: url('../fonts/Mark Simonson - Proxima Nova Alt Regular-webfont.woff') format('woff');
+}
+
+body {
+    font-family: "proximal-nova-regular";
+    font-size: 28px;
+    line-height: 58px;
+    color: rgb(255, 255, 255);
+    
+    background-color: rgb(14, 19, 38);
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    width: 1480px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden
+{
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+
+    white-space: nowrap;
+
+    border: 0;
+
+    -webkit-clip-path: inset(100%);
+            clip-path: inset(100%);
+}
+
+/*-----------Стиль для навигации------------*/
+
+.main-navigation {
+    padding-top: 300px;
+    width: 327px;
+    
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    
+    position: relative;
+    
+    background-color: rgba(43, 23, 51, .4);
+}
+
+.main-navigation::after {
+    content: "";
+    position: absolute;
+    
+    top: 120px;
+    
+    width: 150px;
+    height: 150px;
+    
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+}
+
+.navigation-list {
+    margin-bottom: 250px; 
+}
+
+.navigation-controls {
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-list label{
+    font-family: "proximal-nova-light";
+    font-size: 32px;
+    line-height: 32px;   
+    
+    position: relative;
+    
+    margin: 0;
+    padding: 0;
+    padding-top: 35px;
+    padding-bottom: 40px;
+    padding-left: 80px;
+    min-height: 100px;
+    box-sizing: border-box;
+}
+
+.navigation-social {
+    display: flex;
+}
+
+.navigation-about_me:checked ~ .navigation-controls .navigation-controls-item-about_me,
+.navigation-my_works:checked ~ .navigation-controls .navigation-controls-item-my_works,
+.navigation-my_certificates:checked ~ .navigation-controls .navigation-controls-item-my_certificates,
+.navigation-contacts:checked ~ .navigation-controls .navigation-controls-item-contacts {
+    background-color: rgb(32, 25, 55);
+}
+
+.navigation-about_me:checked ~ .navigation-controls .navigation-controls-item-about_me::before,
+.navigation-my_works:checked ~ .navigation-controls .navigation-controls-item-my_works::before,
+.navigation-my_certificates:checked ~ .navigation-controls .navigation-controls-item-my_certificates::before,
+.navigation-contacts:checked ~ .navigation-controls .navigation-controls-item-contacts::before {
+    content: "";
+    position: absolute;
+    
+    top: 15px;
+    left: 0px;
+    
+    width: 10px;
+    height: 65px;
+    
+    background-color: rgb(255, 75, 168);
+}
+
+
+/*-----------Стиль для main------------*/
+
+.main-container {
+    padding-top: 120px;
+    padding-left: 60px;
+}
+
+
+.main-container h2 {
+    position: relative;
+    
+    font-family: "proximal-nova-light";
+    font-size: 43px;
+    line-height: 43px;
+    
+    margin: 0;
+    padding: 0;
+    margin-bottom: 160px;
+}
+
+.slider-about_me h2::before {
+    content: "";
+    
+    width: 180px;
+    height: 4px;
+    
+    position: absolute;
+    bottom: -5px;
+    
+    background-color: rgb(255, 104, 182);
+}
+
+.slider-info {
+    margin: 0;
+    padding: 0;
+}
+
+
+.slider-about_me {
+    width: 550px;
+    position: relative;
+}
+
+.slider-about_me::before {
+    content: "";
+    position: absolute;
+    
+    bottom: -100px;
+    right: -400px;
+    
+    width: 450px;
+    height: 770px;
+    
+    background-image: url(../img/logo-large.png);
+    background-repeat: no-repeat;
+    opacity: 0.08;
+}
+
+.slider-head {
+    display: flex;
+    position: relative;
+    
+    font-family: "proximal-nova-light";
+    font-size: 65px;
+    line-height: 65px;
+    text-transform: uppercase;
+    
+    margin: 0;
+    padding: 0;
+}
+
+.slider-head p:first-child{
+    padding: 0;
+    margin: 0;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.slider-head p:nth-child(2){
+    position: relative;
+    
+    margin: 0;
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+.slider-head p:nth-child(2)::after{
+    content: "";
+    
+    position: absolute;
+    bottom: 10px;
+    right: -25px;
+    
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    
+    background-color: rgb(255, 104, 182);
+}
+
+.slider-info-job {
+    font-family: "proximal-nova-regular";
+    font-size: 43px;
+    line-height: 58px;
+    
+    padding: 0;
+    margin: 0;
+    margin-bottom: 70px;
+    
+    color: rgb(255, 104, 182);
+}
+
+
+.slider-info-main {
+    font-family: "proximal-nova-light";
+    font-size: 36px;
+    line-height: 58px;
+    
+    margin: 0;
+    padding: 0;
+    margin-bottom: 45px;
+    
+    color: rgba(255, 255, 255, .6);
+}
+
+.slider-contacts-button,
+.slider-works-button {
+    display: inline-block;
+    
+    border: none;
+    margin: 0;
+    padding: 0;
+    
+    color: rgb(255, 255, 255);
+    background-color: rgb(37, 31, 53);
+    
+    padding: 20px 50px;
+    box-sizing: border-box;
+}
+
+
+.button-active {
+    background-color: rgb(255, 104, 182);
+}

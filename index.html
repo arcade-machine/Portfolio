@@ -1,6 +1,83 @@
 <!DOCTYPE html>
-    <html>
-        <body>
-            <a href="320725-device/index.html">Сайт Device</a>
-        </body>
-    </html>
+<html lang="eng">
+    
+<head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link href="CSS/normalize.css" rel="stylesheet">
+    <link href="CSS/stylesheet.css" rel="stylesheet">
+</head>
+    
+<body>
+    <div class="container">
+    <header class="main-header">
+        <h1 class="visually-hidden">Portfolio</h1>
+        <nav class="main-navigation">
+            <div class="navigation-list">
+                <input class="visually-hidden navigation-about_me" type="radio" id="about_me" name="toggle" checked>
+                <input class="visually-hidden navigation-my_works" type="radio" id="my_works" name="toggle">
+                <input class="visually-hidden navigation-my_certificates" type="radio" id="my_certificates" name="toggle">
+                <input class="visually-hidden navigation-contacts" type="radio" id="contacts" name="toggle">
+                <div class="navigation-controls">
+                    <label class="navigation-controls-item-about_me" for="about_me">About me</label>
+                    <label class="navigation-controls-item-my_works" for="my_works">My works</label>
+                    <label class="navigation-controls-item-my_certificates" for="my_certificates">My certificates</label>
+                    <label class="navigation-controls-item-contacts" for="contacts">Contacts</label>
+                </div>
+            </div>
+            <div class="navigation-social">
+                 <a href="#">
+                    <p class="visually-hidden">VK</p>
+                </a>
+                <a href="#">
+                    <p class="visually-hidden">Git</p>
+                </a>
+                <a href="#">
+                    <p class="visually-hidden">Instagram</p>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="main-container">
+        <ul class="slider">
+            <li class="slider-about_me">
+                <h2>About me</h2>
+                <div class="slider-info">
+                    <div class="slider-head">
+                        <p>Sergey</p>
+                        <p>Leonov</p>
+                    </div>
+                    <p class="slider-info-job">Beginner front-end developer.</p>
+                    <p class="slider-info-main">Right now I'm actively looking for work. I really want to improve my skills in website development</p>
+                    <button class="slider-contacts-button button-active">Contact me</button>
+                    <button class="slider-works-button">My works</button>
+                </div>
+            </li>
+            <li class="slider-works">
+                <h2>My works</h2>
+                <ul class="works-items">
+                    <li>
+                        <a href="#">Device</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="slider-certificates">
+                <h3>My certificates</h3>
+                <ul class="certificates-items">
+                    <li>
+                        <a href="#">Professional HTML & CSS, level 1</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="slider-contacts">
+                <h2>Contacts</h2>
+                <p>You can contact me via email:</p>
+                <a class="email">agrael@yandex.ru</a>
+                <p>Or just give me a call:</p>
+                <a href="tel:+7-981-107-58-65">+7-981-107-58-65</a>
+            </li>
+        </ul>
+    </main>
+    </div>
+</body>
+</html>
