@@ -282,3 +282,47 @@ input[type='radio'].visually-hidden
 .button-active {
     background-color: rgb(255, 104, 182);
 }
+
+.slider-works,
+.slider-certificates,
+.slider-contacts {
+    display: none;
+}
+
+
+.slider-display {
+    display: block;
+}
+
+.slider-no_display{
+    display: none;
+}
+
+
+/*
+var aboutme = document.querySelector(".slider-about_me");
+var myworks = document.querySelector(".slider-my_works");
+var certificates = document.querySelector(".slider-certificates");
+var contacts = document.querySelector(".slider-contacts");
+var controlsaboutme = document.querySelector(".navigation-about_me");
+var controlsmyworks = document.querySelector(".navigation-my_works");
+var controlscertificates = document.querySelector(".navigation-my_certificates");
+var controlscontacts = document.querySelector(".navigation-contacts");
+
+controlsmyworks.addEventListener("click", function(evt) {
+	evt.preventDefault();	
+	myworks.classList.add("slider-display");
+});
+*/
+
+
+
+
+
+
+
+
+
+
+
+
