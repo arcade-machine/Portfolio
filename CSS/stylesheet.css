@@ -32,7 +32,7 @@ a {
 .container {
     width: 1480px;
     margin: 0 auto;
-    display: flex;
+    display: flex;   
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -69,7 +69,7 @@ input[type='radio'].visually-hidden
     
     position: relative;
     
-    background-color: rgba(43, 23, 51, .4);
+    background-color: transparent;
 }
 
 .main-navigation::after {
@@ -77,6 +77,7 @@ input[type='radio'].visually-hidden
     position: absolute;
     
     top: 120px;
+    left: 80px;
     
     width: 150px;
     height: 150px;
@@ -86,15 +87,16 @@ input[type='radio'].visually-hidden
 }
 
 .navigation-list {
-    margin-bottom: 250px; 
+    margin-bottom: 200px; 
 }
 
-.navigation-controls {
-    display: flex;
-    flex-direction: column;
-}
 
-.navigation-list label{
+.navigation-list a,
+.navigation-list p{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    
     font-family: "proximal-nova-light";
     font-size: 32px;
     line-height: 32px;   
@@ -110,37 +112,38 @@ input[type='radio'].visually-hidden
     box-sizing: border-box;
 }
 
-.navigation-social {
-    display: flex;
+.navigation-list p {
+    color: rgb(255, 75, 168);
 }
 
-.navigation-about_me:checked ~ .navigation-controls .navigation-controls-item-about_me,
-.navigation-my_works:checked ~ .navigation-controls .navigation-controls-item-my_works,
-.navigation-my_certificates:checked ~ .navigation-controls .navigation-controls-item-my_certificates,
-.navigation-contacts:checked ~ .navigation-controls .navigation-controls-item-contacts {
-    background-color: rgb(32, 25, 55);
+.navigation-list a:hover {
+    background-color: rgb(35, 23, 52);
 }
 
-.navigation-about_me:checked ~ .navigation-controls .navigation-controls-item-about_me::before,
-.navigation-my_works:checked ~ .navigation-controls .navigation-controls-item-my_works::before,
-.navigation-my_certificates:checked ~ .navigation-controls .navigation-controls-item-my_certificates::before,
-.navigation-contacts:checked ~ .navigation-controls .navigation-controls-item-contacts::before {
+.navigation-list .active::before {
     content: "";
     position: absolute;
-    
-    top: 15px;
-    left: 0px;
     
     width: 10px;
     height: 65px;
     
+    top: 18px;
+    left: 0px;
+    
     background-color: rgb(255, 75, 168);
+}
+
+.navigation-social {
+    display: flex;
 }
 
 
 /*-----------Стиль для main------------*/
 
-.main-container {
+.main-container,
+.main-container-work,
+.main-container-certificates,
+.main-container-contacts {
     padding-top: 120px;
     padding-left: 60px;
 }
@@ -158,10 +161,83 @@ input[type='radio'].visually-hidden
     margin-bottom: 160px;
 }
 
-.slider-about_me h2::before {
+.main-container-work h2 {
+    position: relative;
+    
+    font-family: "proximal-nova-light";
+    font-size: 43px;
+    line-height: 43px;
+    
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.main-container-certificates h2{
+    position: relative;
+    
+    font-family: "proximal-nova-light";
+    font-size: 43px;
+    line-height: 43px;
+    
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.main-container-contacts h2 {
+    position: relative;
+    
+    font-family: "proximal-nova-light";
+    font-size: 43px;
+    line-height: 43px;
+    
+    margin: 0;
+    padding: 0;
+    margin-bottom: 160px;
+}
+
+.main-container h2::before {
     content: "";
     
     width: 180px;
+    height: 4px;
+    
+    position: absolute;
+    bottom: -5px;
+    
+    background-color: rgb(255, 104, 182);
+}
+
+.main-container-certificates h2::before{
+    content: "";
+    
+    width: 260px;
+    height: 4px;
+    
+    position: absolute;
+    bottom: -5px;
+    
+    background-color: rgb(255, 104, 182);
+}
+
+.main-container-work h2::before {
+    content: "";
+    
+    width: 100px;
+    height: 4px;
+    
+    position: absolute;
+    bottom: -5px;
+    
+    background-color: rgb(255, 104, 182);
+}
+
+
+.main-container-contacts h2::before {
+    content: "";
+    
+    width: 166px;
     height: 4px;
     
     position: absolute;
@@ -176,17 +252,17 @@ input[type='radio'].visually-hidden
 }
 
 
-.slider-about_me {
+.main-container {
     width: 550px;
     position: relative;
 }
 
-.slider-about_me::before {
+.main-container::before {
     content: "";
     position: absolute;
     
-    bottom: -100px;
-    right: -400px;
+    bottom: 0px;
+    right: -500px;
     
     width: 450px;
     height: 770px;
@@ -267,6 +343,8 @@ input[type='radio'].visually-hidden
 .slider-works-button {
     display: inline-block;
     
+    width: 40%;
+    
     border: none;
     margin: 0;
     padding: 0;
@@ -274,8 +352,10 @@ input[type='radio'].visually-hidden
     color: rgb(255, 255, 255);
     background-color: rgb(37, 31, 53);
     
-    padding: 20px 50px;
+    padding: 10px;
+    margin-right: 30px;
     box-sizing: border-box;
+    text-align: center;
 }
 
 
@@ -283,19 +363,133 @@ input[type='radio'].visually-hidden
     background-color: rgb(255, 104, 182);
 }
 
-.slider-works,
-.slider-certificates,
-.slider-contacts {
-    display: none;
+.work-items {
+    display: flex;
+    flex-wrap: wrap;
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-
-.slider-display {
-    display: block;
+.work-items li {    
+    width: 330px;
+    height: 340px;
+        
+    border: 1px solid #ff4ba8; 
+    
+    margin: 0;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    box-sizing: border-box;
 }
 
-.slider-no_display{
-    display: none;
+.work-items li:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.work-items h3 {
+    font-family: "proximal-nova-light";
+    font-size: 26px;
+    line-height: auto;
+    
+    color: rgb(255, 104, 182);
+    text-align: center;
+    
+    margin: 0;
+    padding: 0;
+}
+
+.button {
+    display: inline-block;
+    
+    font-family: "proximal-nova-light";
+    font-size: 20px;
+    line-height: auto;
+    text-transform: uppercase;
+    
+    background-color: rgb(32, 18, 48);
+    
+    text-align: center;
+    
+    margin: 0;
+    padding: 0;
+    
+    width: 100%;
+}
+
+.certificates-items {
+    list-style: none;
+    
+    margin: 0;
+    padding: 0;
+}
+
+.certificates-items li {
+    width: 250px;
+    
+    margin: 0;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    
+    box-sizing: border-box;
+    
+    border: 1px solid #ff4ba8; 
+}
+
+.certificates-items h3{
+    font-family: "proximal-nova-light";
+    font-size: 22px;
+    line-height: auto;
+    
+    color: rgb(255, 104, 182);
+    text-align: center;
+    
+    margin: 0;
+    padding: 0;
+}
+
+.certificates-items img {
+    position: relative;
+    left: 12px;
+}
+
+.main-container-contacts p {
+    font-family: "proximal-nova-light";
+    font-size: 36px;
+    line-height: 58px;
+    
+    margin: 0;
+    padding: 0;
+    margin-bottom: 15px;
+    
+    color: rgba(255, 255, 255, .6);
+}
+
+.main-container-contacts a {
+    display: inline-block;
+    
+    
+    font-family: "proximal-nova-regular";
+    font-size: 43px;
+    line-height: 58px;
+    
+    padding: 0;
+    margin: 0;
+    
+    margin-bottom: 40px;
+    
+    color: rgb(255, 104, 182);
 }
 
 

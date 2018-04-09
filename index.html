@@ -14,16 +14,10 @@
         <h1 class="visually-hidden">Portfolio</h1>
         <nav class="main-navigation">
             <div class="navigation-list">
-                <input class="visually-hidden navigation-about_me" type="radio" value="about_me" id="about_me" name="toggle" checked>
-                <input class="visually-hidden navigation-my_works" type="radio" value="my_works" id="my_works" name="toggle">
-                <input class="visually-hidden navigation-my_certificates" type="radio" id="my_certificates" name="toggle">
-                <input class="visually-hidden navigation-contacts" type="radio" id="contacts" name="toggle">
-                <div class="navigation-controls">
-                    <label class="navigation-controls-item-about_me" for="about_me">About me</label>
-                    <label class="navigation-controls-item-my_works" for="my_works">My works</label>
-                    <label class="navigation-controls-item-my_certificates" for="my_certificates">My certificates</label>
-                    <label class="navigation-controls-item-contacts" for="contacts">Contacts</label>
-                </div>
+                <p class="active">About me</p>
+                <a href="./works.html">Works</a>
+                <a href="./certificates.html">My certificates</a>
+                <a href="./contacts.html">Contacts</a>
             </div>
             <div class="navigation-social">
                  <a href="#">
@@ -39,20 +33,18 @@
         </nav>
     </header>
     <main class="main-container">
-        <ul class="slider">
-            <li class="slider-about_me">
-                <h2>About me</h2>
-                <div class="slider-info">
-                    <div class="slider-head">
-                        <p>Sergey</p>
-                        <p>Leonov</p>
-                    </div>
-                    <p class="slider-info-job">Beginner front-end developer.</p>
-                    <p class="slider-info-main">Right now I'm actively looking for work. I really want to improve my skills in website development</p>
-                    <button class="slider-contacts-button button-active">Contact me</button>
-                    <button class="slider-works-button">My works</button>
-                </div>
-            </li>
+        <h2>About me</h2>
+        <div class="slider-info">
+            <div class="slider-head">
+                <p>Sergey</p>
+                <p>Leonov</p>
+            </div>
+            <p class="slider-info-job">Beginner front-end developer.</p>
+            <p class="slider-info-main">Right now I'm actively looking for work. I really want to improve my skills in website development</p>
+            <a class="slider-contacts-button button-active">Contact me</a>
+            <a class="slider-works-button" href="works.html">My works</a>
+        </div>
+<!--
             <li class="slider-works">
                 <h2>My works</h2>
                 <ul class="works-items">
@@ -76,7 +68,7 @@
                 <p>Or just give me a call:</p>
                 <a href="tel:+7-981-107-58-65">+7-981-107-58-65</a>
             </li>
-        </ul>
+-->
     </main>
     </div>
 </body>
