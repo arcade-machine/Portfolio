@@ -87,7 +87,7 @@ input[type='radio'].visually-hidden
 }
 
 .navigation-list {
-    margin-bottom: 200px; 
+    margin-bottom: 90px; 
 }
 
 
@@ -135,8 +135,49 @@ input[type='radio'].visually-hidden
 
 .navigation-social {
     display: flex;
+    
+    margin: 0 auto;
 }
 
+.VK,
+.git {
+    position: relative;
+    
+    width: 51px;
+    height: 51px;
+}
+
+.VK {
+    margin-right: 20px;
+}
+
+.VK::after {
+    content: "";
+    position: absolute;
+    
+    width: 51px;
+    height: 51px;
+    
+    top: 0px;
+    left: 0px;
+    
+    background-image: url(../img/icons/vk-social-network-logo.svg);
+    background-repeat: no-repeat;    
+}
+
+.git::after {
+    content: "";
+    position: absolute;
+    
+    width: 51px;
+    height: 51px;
+    
+    top: 0px;
+    left: 0px;
+    
+    background-image: url(../img/icons/github-logo.svg);
+    background-repeat: no-repeat; 
+}
 
 /*-----------Стиль для main------------*/
 
