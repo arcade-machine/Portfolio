@@ -1,0 +1,60 @@
+.my-works {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.my-works__item {
+  width: 236px;
+  height: 233px;
+  background-color: transparent;
+  margin-bottom: 40px;
+  border: 1px solid #a19795;
+  cursor: pointer;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+
+  & a {
+    text-decoration: none;
+  }
+
+  & a:visited {
+    color: #000000;
+  }
+
+  &:hover {
+    filter: none;
+  }
+
+  &:hover .my-works__git{
+    border-bottom: 2px solid #a19795;
+  }
+
+  &:active .my-works__git{
+    opacity: .5;
+    border-bottom: 2px solid #a19795;
+  }
+}
+
+.my-works__git {
+  display: block;
+  font-family: 'Rufina', serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 19px;
+  width: 80px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.my-works__image {
+  max-width: 100%;
+  margin-bottom: 30px;
+}

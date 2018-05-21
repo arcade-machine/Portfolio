@@ -1,0 +1,56 @@
+.bio {
+  width: 62%;
+}
+
+.bio__wrapper {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.bio__logo {
+  margin-right: 15px;
+}
+
+.bio__name {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 9px;
+  font-family: 'Rufina', serif;
+  font-size: 28px;
+  line-height: 31px;
+  color: #ffffff;
+}
+
+.bio__location {
+  padding: 0;
+  padding-left: 15px;
+  margin: 0;
+  margin-bottom: 15px;
+  position: relative;
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  opacity: .5;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 9px;
+    height: 12px;
+    background-image: url("../img/location.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.bio__about {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  opacity: .5;
+}

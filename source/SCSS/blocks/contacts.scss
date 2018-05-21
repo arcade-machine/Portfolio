@@ -1,0 +1,41 @@
+.contacts {
+  width: 31%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__header {
+  margin: 0;
+  margin-bottom: 7px;
+  padding: 0;
+  font-family: 'Rufina', serif;
+  font-size: 28px;
+  line-height: 31px;
+  color: #ffffff;
+}
+
+.contacts__email {
+  margin-bottom: 15px;
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, .5);
+  text-decoration: none;
+
+  &:hover .contacts__mail-hover{
+    color: rgba(247, 148, 54, 1.0);
+  }
+}
+
+.contacts__phone {
+  font-family: "Open Sans", serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, .5);
+  text-decoration: none;
+
+  &:hover .contacts__phone-hover{
+    color: rgba(247, 148, 54, 1.0);
+  }
+}
