@@ -234,6 +234,12 @@
   .contacts__phone:hover .contacts__phone-hover {
     color: #f79436; }
 
+@font-face {
+  font-family: 'Rufina';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Rufina-Regular.woff2") format("woff2"); }
+
 .container {
   width: 100%;
   min-height: 100vh;
