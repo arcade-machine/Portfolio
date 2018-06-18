@@ -1,0 +1,65 @@
+.order-options {
+  padding: 0;
+  padding-bottom: 147px;
+  margin: 0;
+  list-style: none;
+}
+
+.order-options__item {
+  padding-top: 20px;
+  display: flex;
+}
+
+.order-options__count {
+  padding: 0;
+  margin: 0;
+  margin-right: 15px;
+  font-family: "PlayfairDisplay Bold", serif;
+  font-size: 35px;
+  line-height: 10px;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+.order-options__head {
+  padding: 0;
+  margin: 0;
+  font-family: "Circe Bold", serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.order-options__content {
+  padding: 0;
+  margin: 0;
+  font-family: "Circe Regular", serif;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+@media (min-width: $tablet) {
+  .order-options {
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .order-options {
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .order-options__count {
+    font-size: 65px;
+  }
+
+  .order-options__head {
+    font-size: 21px;
+  }
+
+  .order-options__content {
+    font-size: 20px;
+  }
+}

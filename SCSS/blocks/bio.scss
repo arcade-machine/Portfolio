@@ -54,3 +54,11 @@
   color: #ffffff;
   opacity: .5;
 }
+
+@media (max-width: 975px) {
+  .bio {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}

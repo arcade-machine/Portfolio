@@ -1,0 +1,62 @@
+.custom-making {
+  margin: 0;
+  padding: 0;
+}
+
+.custom-making__type {
+  margin-bottom: 10px;
+}
+
+.custom-making__color {
+  margin-bottom: 10px;
+}
+
+.custom-making__full-name {
+  margin-bottom: 10px;
+}
+
+.custom-making__telephone {
+  margin-bottom: 10px;
+}
+
+.custom-making__email {
+  margin-bottom: 10px;
+}
+
+.custom-making__more {
+  margin-bottom: 10px;
+}
+
+.custom-making__required {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: "open-sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+}
+
+@media (min-width: $tablet) {
+  .custom-making__wrapper {
+    display: flex;
+  }
+
+  .custom-making__button {
+    width: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    order: -1;
+  }
+
+  .custom-making__required {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: $desktop) {
+  .custom-making__wrapper {
+    padding-left: 170px;
+    width: 700px;
+  }
+}

@@ -1,0 +1,63 @@
+.contacts-social {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-social__head {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "Circe Regular", serif;
+  font-size: 14px;
+}
+
+.contacts-social__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.contacts-social__item {
+  width: 62px;
+  height: 63px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts-social__link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-repeat: no-repeat;
+
+  &--instagram {
+    background-image: url("../img/icon-insta.svg");
+    background-position: 50% 50%;
+    background-size: 60%;
+  }
+
+  &--vk {
+    background-image: url("../img/vk-logo.svg");
+    background-position: 45% 50%;
+    background-size: 60%;
+  }
+
+  &--twitter {
+    background-image: url("../img/icon-twitter.svg");
+    background-position: 50% 50%;
+    background-size: 60%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .contacts-social__head {
+    font-size: 20px;
+  }
+}

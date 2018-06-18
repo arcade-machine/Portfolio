@@ -1,0 +1,110 @@
+.contacts {
+  max-width: 500px;
+  padding-top: 35px;
+  padding-left: 6.5%;
+  padding-right: 6.5%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.contacts__head {
+  padding: 0;
+  margin: 0;
+  font-family: "PlayfairDisplay Bold", serif;
+  font-size: 24px;
+  text-align: center;
+}
+
+.contacts__info {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "IntroScriptR", serif;
+  font-size: 22px;
+  color: #32313d;
+}
+
+.contacts__phone {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "Circe Regular", serif;
+  font-size: 14px;
+
+  & a {
+    text-decoration: none;
+    color: #000000;
+  }
+}
+
+.contacts__email {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "Circe Regular", serif;
+  font-size: 14px;
+
+  & a {
+    text-decoration: none;
+    color: #000000;
+  }
+}
+
+@media (min-width: $tablet) {
+  .contacts {
+    max-width: 900px;
+    padding-left: 48px;
+    padding-right: 46px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    //background-image: url("../img/questions--tablet.png");
+    //background-repeat: no-repeat;
+    //background-position: bottom right;
+  }
+
+  .contacts__head {
+    width: 100%;
+    font-size: 28px;
+    text-align: start;
+  }
+
+  .contacts__info {
+    width: 100%;
+    font-size: 22px;
+  }
+
+  .contacts__wrapper {
+    width: 33%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .contacts {
+    max-width: 1220px;
+    padding: 0;
+    padding-top: 40px;
+    justify-content: flex-start;
+  }
+
+  .contacts__head {
+    padding-bottom: 20px;
+    font-size: 40px;
+  }
+
+  .contacts__info {
+    font-size: 35px;
+  }
+
+  .contacts__phone {
+    font-size: 20px;
+  }
+
+  .contacts__email {
+    font-size: 20px;
+  }
+
+  .contacts__wrapper {
+    width: 26%;
+  }
+}

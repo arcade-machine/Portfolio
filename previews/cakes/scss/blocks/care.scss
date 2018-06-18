@@ -1,0 +1,71 @@
+.care {
+  max-width: 500px;
+  padding-left: 6.5%;
+  padding-right: 6.5%;
+  padding-bottom: 175px;
+  margin: 0 auto;
+  background-image: url("../img/cake-middle--mobile.png"), url("../img/dish--mobile-tablet.png"), url("../img/sparkles--mobile.png");
+  background-position: 50% 170px, 49.5% 154px, 50% 120px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+.care__head {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: "PlayfairDisplay Bold", serif;
+  font-size: 24px;
+}
+
+.care__info {
+  padding: 0;
+  margin: 0;
+  font-family: "IntroScriptR", serif;
+  font-size: 22px;
+  color: #32313d;
+}
+
+.care__content {
+  padding: 0;
+  margin: 0;
+  font-family: "Circe Regular", serif;
+  font-size: 14px;
+}
+
+@media (min-width: $tablet) {
+  .care {
+    max-width: 900px;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 150px;
+    padding-bottom: 130px;
+    margin: 0;
+    background-image: none;
+  }
+
+  .care__content {
+    width: 47%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .care {
+    max-width: 1220px;
+    padding-top: 400px;
+    padding-bottom: 260px;
+  }
+
+  .care__head {
+    font-size: 40px;
+  }
+
+  .care__info {
+    font-size: 40px;
+  }
+
+  .care__content {
+    font-size: 20px;
+  }
+}

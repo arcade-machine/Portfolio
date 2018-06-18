@@ -1,0 +1,79 @@
+.advantages-care__quote {
+  max-width: 500px;
+  padding-left: 6.5%;
+  padding-right: 6.5%;
+  margin: 0 auto;
+  font-family: "PlayfairDisplay Bold", serif;
+  font-size: 13px;
+  font-style: italic;
+  color: #2d2829;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.advantages-care__signature {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet) {
+  .advantages-care {
+    max-width: 900px;
+    padding-left: 48px;
+    padding-right: 66px;
+    margin: 0 auto;
+    background-image: url("../img/advantages-cake.png"), url("../img/advantages-1--tablet.png"), url("../img/advantages-2--tablet.png"), url("../img/advantages-3--tablet.png"), url("../img/advantages-4--tablet.png"), url("../img/cake-middle--tablet.png"), url("../img/dish--mobile-tablet.png"), url("../img/sparkles--tablet.png");
+    background-size: 272px 278px, 30px 30px, 56px 81px, 28px 26px, 92px 73px, 324px 317px, 367px 368px, 450px 441px;
+    background-position: 0 55%, 0 40%, 55px 36%, 160px 37%, 235px 65%, 90% 90%, 93% 95%, 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .advantages-care__quote {
+    max-width: none;
+    width: 45%;
+    padding: 0;
+    margin-bottom: 25px;
+    font-size: 14px;
+    line-height: 21px;
+    position: relative;
+
+    &::before {
+      content: ',,';
+      position: absolute;
+      top: -65px;
+      left: 48%;
+      font-size: 77px;
+      font-family: "PlayfairDisplay Bold", serif;
+      color: #ffffff;
+    }
+  }
+
+  .advantages-care__signature {
+    margin-bottom: 65px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .advantages-care {
+    max-width: 1220px;
+    padding: 0;
+    background-image: url("../img/advantages-cake.png"), url("../img/advantages-1--desktop.png"), url("../img/advantages-2--desktop.png"), url("../img/advantages-3--desktop.png"), url("../img/advantages-4--desktop.png"), url("../img/cake-middle--desktop.png"), url("../img/dish--desktop.png"), url("../img/sparkles--desktop.png");
+    background-size: 550px 547px, 52px 54px, 103px 148px, 51px 48px, 167px 132px, 590px 577px, 649px 651px, 768px 802px;
+    background-position: 0 45%, 0 33%, 55px 26%, 207px 26%, 520px 53%, 98% 96%, 102% 100%, 110% 114%;
+    background-repeat: no-repeat;
+  }
+
+  .advantages-care__quote {
+    font-size: 25px;
+
+    &::before {
+      top: -105px;
+      left: 44%;
+      font-size: 140px;
+    }
+  }
+
+  .advantages-care__signature {
+    margin-bottom: 100px;
+  }
+}

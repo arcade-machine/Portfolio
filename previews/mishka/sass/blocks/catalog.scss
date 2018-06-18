@@ -1,0 +1,24 @@
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  list-style: none;
+}
+
+.catalog__item {
+  margin-bottom: 30px;
+  border: 1px solid #ededed;
+}
+
+@media (min-width: $tablet) {
+  .catalog__list {
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .catalog__list {
+    display: flex;
+    width: 100%;
+  }
+}

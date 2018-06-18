@@ -1,0 +1,26 @@
+.custom__top {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  font-family: "open-sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+}
+
+@media (min-width: $tablet) {
+  .custom__top {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 75px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .custom__top {
+    width: 700px;
+    padding-left: 175px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

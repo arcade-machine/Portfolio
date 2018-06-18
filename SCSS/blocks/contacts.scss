@@ -39,3 +39,10 @@
     color: rgba(247, 148, 54, 1.0);
   }
 }
+
+@media (max-width: 975px) {
+  .contacts {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

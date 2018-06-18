@@ -1,0 +1,78 @@
+.catalog-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-list__link {
+  width: 100%;
+  position: relative;
+  display: block;
+  min-height: 100px;
+  text-decoration: none;
+  padding-top: 27px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 27px;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+.catalog-list__link--interior {
+  background-color: #63d1bb;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 23%;
+    right: 12%;
+    width: 42px;
+    height: 63px;
+    background-image: url("../img/icon-interior.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.catalog-list__link--toys {
+  background-color: #56c3b2;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 23%;
+    right: 10%;
+    width: 61px;
+    height: 61px;
+    background-image: url("../img/icon-toy.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.catalog-list__info {
+  font-family: "open-sans_bold", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  max-width: 130px;
+}
+
+@media (min-width: $tablet) {
+  .catalog-list {
+    display: flex;
+    width: 100%;
+  }
+
+  .catalog-list__item {
+    width: 50%;
+  }
+
+  .catalog-list__link {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .catalog-list__info {
+    padding-left: 35px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

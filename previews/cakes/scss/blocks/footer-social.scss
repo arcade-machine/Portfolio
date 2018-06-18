@@ -1,0 +1,38 @@
+.footer-social {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+  display: flex;
+  list-style: none;
+}
+
+.footer-social__item {
+  width: 40px;
+  height: 35px;
+  margin-right: 10px;
+}
+
+.footer-social__link {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-repeat: no-repeat;
+
+  &--instagram {
+    background-image: url("../img/icon-insta-grey.svg");
+    background-position: 50% 50%;
+    background-size: 60%;
+  }
+
+  &--vk {
+    background-image: url("../img/vk-logo-grey.svg");
+    background-position: 45% 50%;
+    background-size: 60%;
+  }
+
+  &--twitter {
+    background-image: url("../img/icon-twitter-grey.svg");
+    background-position: 50% 50%;
+    background-size: 60%;
+  }
+}

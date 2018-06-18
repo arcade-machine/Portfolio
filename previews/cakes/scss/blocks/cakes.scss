@@ -1,0 +1,39 @@
+.cakes {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.cakes__head {
+  font-family: "PlayfairDisplay Bold", serif;
+  font-size: 24px;
+  line-height: 66px;
+  letter-spacing: 0.01em;
+  color: #2d2829;
+  text-align: center;
+}
+
+@media (min-width: $tablet) {
+  .cakes {
+    max-width: 900px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .cakes__head {
+    font-size: 28px;
+    text-align: start;
+  }
+}
+
+@media (min-width: $desktop) {
+  .cakes {
+    max-width: 1220px;
+    padding: 0;
+  }
+
+  .cakes__head {
+    font-size: 40px;
+    margin-bottom: 70px;
+  }
+}

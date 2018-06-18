@@ -1,0 +1,32 @@
+.button {
+  width: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 52px;
+  padding-right: 52px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  background-color: #f50049;
+  font-family: "Circe Regular", serif;
+  font-size: 13px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #fefefe;
+
+  &:hover {
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+  }
+}
+
+@media (min-width: $tablet) {
+  .button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 45px;
+    padding-right: 45px;
+    font-size: 10px;
+  }
+}

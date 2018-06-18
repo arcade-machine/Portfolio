@@ -12,18 +12,18 @@ var rename = require("gulp-rename");
 
 gulp.task("sass", function () {
     return gulp.src("source/scss/styles.scss")
-    .pipe(plumber())
-    .pipe(sass())
-    .pipe(postcss([
-        autoprefixer()
-    ]))
-    .pipe(gulp.dest("source/css"))
-    .pipe(minicss())
-    .pipe(rename("styles.min.css"))
-    .pipe(gulp.dest("source/css"))
-    .pipe(browserSync.reload({
-        stream: true
-    }))
+        .pipe(plumber())
+        .pipe(sass())
+        .pipe(postcss([
+            autoprefixer()
+        ]))
+        .pipe(gulp.dest("source/css"))
+        .pipe(minicss())
+        .pipe(rename("styles.min.css"))
+        .pipe(gulp.dest("source/css"))
+        .pipe(browserSync.reload({
+            stream: true
+        }))
 });
 
 gulp.task("watch", ["browserSync", "sass"], function () {
@@ -39,10 +39,3 @@ gulp.task("browserSync", function () {
         },
     })
 });
-
-// gulp.task("useref", function () {
-//     return gulp.src("source/*.html")
-//         .pipe(useref())
-//         .pipe(gulpIf("*.js", minify()))
-//         .pipe(gulp.dest("source/js"))
-// });

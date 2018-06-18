@@ -1,0 +1,170 @@
+.cake-types {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.cake-types__item {
+  width: 280px;
+  min-height: 120px;
+  padding: 10px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 0px 36px 3px rgba(251,235,234,1);
+  }
+  
+  &--classic {
+    background-image: url("../img/classic--mobile.png");
+  }
+
+  &--muss {
+    background-image: url("../img/muss--mobile.png");
+  }
+
+  &--wedding {
+    background-image: url("../img/wedding--mobile.png");
+  }
+
+  &--for-men {
+    background-image: url("../img/for-men--mobile.png");
+  }
+
+  &--for-women {
+    background-image: url("../img/for-women--mobile.png");
+  }
+
+  &--for-children {
+    order: 1;
+    background-color: #f4f2f3;
+    background-image: url("../img/for-children--mobile.png");
+  }
+}
+
+.cake-types__head {
+  padding: 0;
+  margin: 0;
+  font-family: "Circe Regular", serif;
+  font-size: 14px;
+}
+
+.cake-types__count {
+  padding: 0;
+  margin: 0;
+  font-family: "Circe Regular", serif;
+  font-size: 12px;
+}
+
+@media (min-width: $tablet) {
+  .cake-types {
+    display: block;
+
+    &::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+  .cake-types__item {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    background-position: 50% 50%;
+    background-color: #ffffff;
+
+    &--classic {
+      width: 57%;
+      min-height: 370px;
+      margin-right: 21px;
+      margin-bottom: 20px;
+      float: left;
+      background-image: url("../img/classic--tablet.png");
+    }
+
+    &--muss {
+      width: 39.7%;
+      min-height: 167px;
+      margin-bottom: 35px;
+      float: right;
+      background-image: url("../img/muss--tablet.png");
+    }
+
+    &--wedding {
+      width: 39.7%;
+      min-height: 167px;
+      margin-bottom: 20px;
+      float: right;
+      background-image: url("../img/wedding--tablet.png");
+    }
+
+    &--for-men {
+      display: inline-block;
+      width: 39.7%;
+      margin-right: 21px;
+      margin-bottom: 35px;
+      min-height: 167px;
+      float: left;
+      background-image: url("../img/for-men--tablet.png");
+    }
+
+    &--for-women {
+      display: inline-block;
+      width: 39.7%;
+      min-height: 167px;
+      float: left;
+      background-image: url("../img/for-women--tablet.png");
+    }
+
+    &--for-children {
+      display: inline-block;
+      width: 57%;
+      min-height: 370px;
+      margin-bottom: 20px;
+      float: right;
+      background-color: #f4f4f6;
+      background-image: url("../img/for-children--tablet.png");
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .cake-types__item {
+    &--classic {
+      min-height: 653px;
+      background-image: url("../img/classic--desktop.png");
+    }
+
+    &--muss {
+      min-height: 307px;
+      background-image: url("../img/muss--desktop.png");
+    }
+
+    &--wedding {
+      min-height: 307px;
+      background-image: url("../img/wedding--desktop.png");
+    }
+
+    &--for-men {
+      min-height: 307px;
+      background-image: url("../img/for-men--desktop.png");
+    }
+
+    &--for-women {
+      min-height: 307px;
+      background-image: url("../img/for-women--desktop.png");
+    }
+
+    &--for-children {
+      min-height: 653px;
+      background-image: url("../img/for-children--desktop.png");
+    }
+  }
+}

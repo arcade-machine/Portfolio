@@ -1,0 +1,159 @@
+.intro {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  padding-top: 133px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../img/cake-top--mobile.png");
+  background-repeat: no-repeat;
+  background-position: 50% -200px;
+}
+
+.intro__head {
+  width: 100%;
+  padding: 0;
+  padding-left: 6.5%;
+  padding-right: 6.5%;
+  margin: 0;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-family: "PlayfairDisplay Bold", serif;
+  font-size: 40px;
+  line-height: 36px;
+  letter-spacing: 0.075em;
+  color: #2d2829;
+  text-align: center;
+}
+
+.intro__handmade {
+  width: 100%;
+  padding: 0;
+  padding-left: 6.5%;
+  padding-right: 6.5%;
+  margin: 0;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-family: "IntroScriptR", serif;
+  font-size: 22px;
+  color: #32313d;
+  text-align: center;
+}
+
+.intro__advantages {
+  width: 100%;
+  padding: 0;
+  padding-left: 6.5%;
+  padding-right: 6.5%;
+  margin: 0;
+  margin-bottom: 29px;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.intro__item {
+  width: auto;
+  min-height: 33px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+.intro__icon {
+  margin-right: 10px;
+
+  &--delivery {
+    width: 33px;
+    height: 32px;
+  }
+}
+
+.intro__info {
+  width: 200px;
+  padding: 0;
+  margin: 0;
+  font-family: "Circe Regular", serif;
+  font-size: 14px;
+  color: #000000;
+}
+
+.intro__button {
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet) {
+  .intro {
+    max-width: 900px;
+    padding-left: 48px;
+    padding-top: 100px;
+    box-sizing: border-box;
+    background-image: url("../img/cake-top--tablet.png"), url("../img/cherry-top--tablet.png"), url("../img/rasp-top--tablet.png"), url("../img/cherry-top2--tablet.png");
+    background-position: 340px 0, 330px 20px, 300px 225px, 280px 390px;
+  }
+
+  .intro__head {
+    padding-left: 0;
+    padding-right: 6.3%;
+    font-size: 60px;
+    line-height: 55px;
+    text-align: start;
+  }
+
+  .intro__handmade {
+    padding-left: 0;
+    padding-right: 6.3%;
+    font-size: 36px;
+    text-align: start;
+  }
+
+  .intro__button {
+    margin: 0;
+    margin-bottom: 147px;
+    margin-right: auto;
+  }
+
+  .intro__advantages {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    order: 1;
+  }
+
+  .intro__info {
+    width: auto;
+    margin-right: 69px;
+    font-size: 14px;
+    align-self: flex-end;
+  }
+
+  .intro__icon--delivery {
+    width: 55px;
+    height: 54px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .intro {
+    max-width: 1220px;
+    padding-left: 0;
+    padding-top: 150px;
+    margin-bottom: 255px;
+    background-image: none;
+    position: relative;
+  }
+
+  .intro__head {
+    padding: 0;
+    font-size: 78px;
+  }
+
+  .intro__handmade {
+    padding: 0;
+    font-size: 41px;
+  }
+
+  .intro__button {
+    margin-bottom: 127px;
+  }
+}
