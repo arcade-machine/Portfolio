@@ -24,7 +24,8 @@
   flex-wrap: wrap; }
 
 .navigation__link {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000000; }
   .navigation__link:visited {
     color: #000000; }
 
