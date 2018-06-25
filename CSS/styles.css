@@ -104,9 +104,12 @@
   width: 80px;
   margin: 0 auto;
   text-align: center;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  color: #000000; }
   .my-works__git:hover {
     border-bottom: 2px solid #a19795; }
+  .my-works__git:visited {
+    color: #000000; }
 
 .my-works__preview {
   width: 80px;
