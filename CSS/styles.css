@@ -107,7 +107,7 @@
   box-sizing: border-box;
   color: #000000; }
   .my-works__git:hover {
-    border-bottom: 2px solid #a19795; }
+    border-bottom: 2px solid #ff6942; }
   .my-works__git:visited {
     color: #000000; }
 
@@ -124,7 +124,7 @@
   color: #000000;
   border-bottom: 2px solid transparent; }
   .my-works__preview:hover {
-    border-bottom: 2px solid #a19795; }
+    border-bottom: 2px solid #ff6942; }
 
 .my-works__image {
   max-width: 100%;

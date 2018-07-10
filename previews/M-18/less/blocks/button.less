@@ -1,0 +1,42 @@
+.button
+{
+  padding: 1.65vh 1.91vw;
+  font-family: "Muller-medium",
+      Arial,
+      serif;
+  .fluid-type(font-size, 600px, 1880px, 8px, 16px);
+  line-height: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #f9572e;
+  border-radius: 1.38vw;
+  box-shadow: 0 0 35px 0 rgba(249,87,46,1);
+  cursor: pointer;
+
+  &:visited {
+    color: #ffffff;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: @desktop) {
+  .button {
+    padding-left: 36px;
+    padding-right: 36px;
+    border-radius: 26px;
+  }
+}
+
+@media (min-height: @desktopHeight) {
+  .button {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
