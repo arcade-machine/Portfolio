@@ -303,14 +303,14 @@ img {
 
 .container {
   width: 100%;
-  min-width: 475px;
+  min-width: 320px;
   min-height: 100vh;
   margin: 0;
   padding: 0;
   background-color: #f7f7f7; }
 
 .container__footer {
-  min-width: 475px;
+  min-width: 320px;
   margin: 0;
   padding: 0;
   background-color: #605a58; }
