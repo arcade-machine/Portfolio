@@ -4,3 +4,9 @@
   margin: 0 auto;
   box-sizing: border-box;
 }
+
+@media (max-width: 975px) {
+  .main-page {
+    padding: 20px;
+  }
+}

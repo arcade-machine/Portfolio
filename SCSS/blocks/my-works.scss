@@ -13,6 +13,9 @@
   border: 1px solid #a19795;
   cursor: pointer;
   background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -o-filter: grayscale(100%);
@@ -22,6 +25,18 @@
   & a {
     display: block;
     text-decoration: none;
+  }
+
+  & a:first-of-type {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  & a:first-of-type:hover .my-works__preview{
+    border-bottom: 2px solid #ff6942;
   }
 
   & a:visited {
@@ -38,13 +53,12 @@
 }
 
 .my-works__git {
-  display: block;
+  padding: 0;
+  margin: 0;
   font-family: 'Rufina', Arial, serif;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 19px;
-  width: 80px;
-  margin: 0 auto;
   border-bottom: 2px solid transparent;
   text-align: center;
   box-sizing: border-box;
@@ -60,21 +74,15 @@
 }
 
 .my-works__preview {
-  width: 80px;
-  margin: 0 auto;
+  padding: 0;
+  margin: 0;
   margin-bottom: 10px;
-  display: block;
   font-family: 'Rufina', Arial, serif;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
   color: #000000;
   border-bottom: 2px solid transparent;
-
-  &:hover {
-    border-bottom: 2px solid #ff6942;
-  }
 }
 
 .my-works__image {

@@ -61,4 +61,15 @@
     margin: 0 auto;
     margin-bottom: 40px;
   }
+
+  .bio__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bio__logo {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
