@@ -1,18 +1,15 @@
 .my-works {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
 }
 
 .my-works__item {
-  width: 236px;
-  height: 233px;
-  margin-bottom: 40px;
-  margin-right: 10px;
+  padding-bottom: 10px;
   border: 1px solid #a19795;
   cursor: pointer;
   background-color: transparent;
@@ -23,6 +20,7 @@
   filter: grayscale(100%);
 
   & a {
+    display: block;
     text-decoration: none;
   }
 
@@ -41,12 +39,13 @@
 
 .my-works__git {
   display: block;
-  font-family: 'Rufina', serif;
+  font-family: 'Rufina', Arial, serif;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 19px;
   width: 80px;
   margin: 0 auto;
+  border-bottom: 2px solid transparent;
   text-align: center;
   box-sizing: border-box;
   color: #000000;
@@ -65,7 +64,7 @@
   margin: 0 auto;
   margin-bottom: 10px;
   display: block;
-  font-family: 'Rufina', serif;
+  font-family: 'Rufina', Arial, serif;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 19px;
@@ -79,14 +78,7 @@
 }
 
 .my-works__image {
-  max-width: 100%;
+  width: 100%;
+  height: auto;
   margin-bottom: 30px;
-}
-
-@media (max-width: 975px) {
-  .my-works {
-    width: 240px;
-    margin: 0 auto;
-    flex-direction: column;
-  }
 }

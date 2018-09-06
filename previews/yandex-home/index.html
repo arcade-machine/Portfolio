@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Яндекс Дом</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+<div class="top-wrapper">
+    <header class="main-header main-header--open-nav">
+        <img class="main-header__logo" src="img/Яндекс%20Дом@1x.png" width="108" height="27">
+        <button class = "main-header__burger"></button>
+        <nav class="main-header__navigation navigation">
+            <ul>
+                <li class="navigation__item navigation__item--current">
+                    <a href="#">Сводка</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#">Устройства</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#">Сценарии</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</div>
+<main class="main-page">
+    <section class="main-page__homepage homepage">
+        <h2>Главное</h2>
+        <section class="homepage__welcome welcome">
+            <div class="welcome__wrapper">
+                <h3>Привет, Геннадий!</h3>
+                <p>Двери и окна закрыты, сигнализация включена</p>
+                <ul class="welcome__weather">
+                    <li>
+                        <p>Дома</p>
+                        <p class="welcome__celsius">+23</p>
+                    </li>
+                    <li>
+                        <p>За окном</p>
+                        <p class="welcome__celsius">
+                            +19
+                            <img src="img/cloud-drizzle.svg" width="26" height="26">
+                        </p>
+
+                    </li>
+                </ul>
+            </div>
+            <ul class="welcome__tasks welcome-tasks">
+                <li class="welcome-tasks__item">
+                    <img src="img/icon_temperature.svg" width="24" height="24">
+                    <h4>Philips Cooler</h4>
+                    <p>Начнет охлаждать в 16:30</p>
+                </li>
+                <li class="welcome-tasks__item">
+                    <img src="img/icon_sun.svg" width="24" height="24">
+                    <h4>Xiaomi Yeelight LED Smart Bulb</h4>
+                    <p>Включится в 17:00</p>
+                </li>
+                <li class="welcome-tasks__item welcome-tasks__item--scroll">
+                    <img class="welcome__scroll-button" src="img/Icons/Arrow%20Double/M.svg" width="16" height="16">
+                </li>
+            </ul>
+        </section>
+    </section>
+    <section class="main-page__favourite-scripts favourite-scripts">
+        <div class="favourite-scripts__wrapper">
+            <h2>Избранные сценарии</h2>
+            <ul class="favourite-scripts__controls scripts-controls">
+                <li class="scripts-controls__item">
+                    <button class="scripts-controls__button scripts-controls__button--left">
+                        <img src="img/Icons/Arrow%20Right/M%20Copy@1x.png" width="9" height="14">
+                    </button>
+                </li>
+                <li class="scripts-controls__item">
+                    <button class="scripts-controls__button scripts-controls__button--right">
+                        <img src="img/Icons/Arrow%20Right/M%20Copy@1x.png" width="9" height="14">
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <ul class="favourite-scripts__list">
+            <li class="favourite-scripts__item">
+                <img src="img/icon_sun_2.svg" width="24" height="24">
+                <h4>Выключить весь свет в доме и во дворе</h4>
+            </li>
+            <li class="favourite-scripts__item">
+                <img src="img/icon_scheduled.svg" width="24" height="24">
+                <h4>Я ухожу</h4>
+            </li>
+            <li class="favourite-scripts__item">
+                <img src="img/icon_sun_2.svg" width="24" height="24">
+                <h4>Выключить свет в коридоре</h4>
+            </li>
+            <li class="favourite-scripts__item">
+                <img src="img/icon_temperature_2.svg" width="24" height="24">
+                <h4>Набрать горячую ванну</h4>
+                <p>Начнется в 18:00</p>
+            </li>
+            <li class="favourite-scripts__item favourite-scripts__item--warm-floor">
+                <img src="img/icon_temperature_2.svg" width="24" height="24">
+                <h4>Сделать пол теплым по всей квартире</h4>
+            </li>
+        </ul>
+    </section>
+    <section class="main-page__favourite-devices favourite-devices">
+        <div class="favourite-devices__wrapper">
+            <h2>Избранные устройства</h2>
+            <ul class="favourite-devices__filter filter">
+                <li class="filter__item filter__item--current">
+                    <a href="#">Все</a>
+                </li>
+                <li class="filter__item">
+                    <a href="#">Кухня</a>
+                </li>
+                <li class="filter__item">
+                    <a href="#">Зал</a>
+                </li>
+                <li class="filter__item">
+                    <a href="#">Лампочки</a>
+                </li>
+                <li class="filter__item">
+                    <a href="#">Камеры</a>
+                </li>
+            </ul>
+            <ul class="favourite-devices__controls devices-controls">
+                <li class="devices-controls__item">
+                    <button class="devices-controls__button devices-controls__button--left">
+                        <img src="img/Icons/Arrow%20Right/M%20Copy@1x.png" width="9" height="14">
+                    </button>
+                </li>
+                <li class="devices-controls__item">
+                    <button class="devices-controls__button devices-controls__button--right">
+                        <img src="img/Icons/Arrow%20Right/M%20Copy@1x.png" width="9" height="14">
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <ul class="favourite-devices__devices devices">
+            <li class="devices__item devices__item--light">
+                <img src="img/icon_sun_2.svg" width="24" height="24">
+                <h4>Xiaomi Yeelight LED Smart Bulb</h4>
+                <p>Включено</p>
+            </li>
+            <li class="devices__item">
+                <img src="img/icon_sun.svg" width="24" height="24">
+                <h4>D-Link Omna 180 Cam</h4>
+                <p>Включится в 17:00</p>
+            </li>
+            <li class="devices__item devices__item--temperature">
+                <img src="img/icon_temperature.svg" width="24" height="24">
+                <h4>Elgato Eve Degree Connected</h4>
+                <p>Выключено до 17:00</p>
+            </li>
+            <li class="devices__item">
+                <img src="img/icon_sun.svg" width="24" height="24">
+                <h4>LIFX Mini Day $ Dusk A60 E27</h4>
+                <p>Включится в 17:00</p>
+            </li>
+            <li class="devices__item">
+                <img src="img/icon_sun_2.svg" width="24" height="24">
+                <h4>Xiaomi Mi Air Purifier 2S</h4>
+                <p>Включено</p>
+            </li>
+            <li class="devices__item">
+                <img src="img/icon_sun.svg" width="24" height="24">
+                <h4>Philips Zhirui</h4>
+                <p>Выключено</p>
+            </li>
+        </ul>
+    </section>
+</main>
+<footer class="main-footer">
+    <nav class="main-footer__navigation footer-navigation">
+        <ul>
+            <li class="footer-navigation__item">
+                <a href="#">Помощь</a>
+            </li>
+            <li class="footer-navigation__item">
+                <a href="#">Обратная связь</a>
+            </li>
+            <li class="footer-navigation__item">
+                <a href="#">Разработчикам</a>
+            </li>
+            <li class="footer-navigation__item">
+                <a href="#">Условия использования</a>
+            </li>
+        </ul>
+    </nav>
+    <section class="main-footer__copyright copyright">
+        <p>©2001-2017 ООО "Яндекс"</p>
+    </section>
+</footer>
+<div class="pop-up">
+    <section class="pop-up__warm-floor warm-floor">
+        <div class="warm-floor__content">
+            <div class="warm-floor__wrapper">
+                <h3>Xiaomi Warm Floor</h3>
+                <p>Включено</p>
+            </div>
+            <div class="warm-floor__temperature">
+                <p>+23</p>
+                <img src="img/icon_temperature_2.svg" width="40" height="40">
+            </div>
+            <div class="warm-floor__termostat">
+                <p>+23</p>
+            </div>
+        </div>
+        <div class="warm-floor__buttons">
+            <button class="warm-floor__button warm-floor__button--apply">Применить</button>
+            <button class="warm-floor__button">Закрыть</button>
+        </div>
+    </section>
+    <section class="pop-up__light light">
+        <div class="light__content">
+            <div class="light__wrapper">
+                <h3>Xiaomi Yeelight LED Smart Bulb</h3>
+                <p>Включится в 17:00</p>
+                <img class="light__icon" src="img/icon_sun.svg" width="40" height="40">
+            </div>
+            <ul class="light__list">
+                <li class="light__item light__item--current">
+                    <a>Вручную</a>
+                </li>
+                <li class="light__item">
+                    <a>Дневной свет</a>
+                </li>
+                <li class="light__item">
+                    <a>Вечерний свет</a>
+                </li>
+                <li class="light__item">
+                    <a>Рассвет</a>
+                </li>
+            </ul>
+            <div class="light__termostat">
+                <div class="light__slider"></div>
+            </div>
+        </div>
+        <div class="light__buttons">
+            <button class="light__button light__button--apply">Применить</button>
+            <button class="light__button">Закрыть</button>
+        </div>
+    </section>
+    <section class="pop-up__temperature temperature">
+        <div class="temperature__content">
+            <div class="temperature__wrapper">
+                <h3>Elgato Eve Degree Connected</h3>
+                <p>Включено</p>
+                <img class="temperature__icon" src="img/icon_temperature_2.svg" width="40" height="40">
+            </div>
+            <ul class="temperature__list">
+                <li class="temperature__item temperature__item--current">
+                    <a>Вручную</a>
+                </li>
+                <li class="temperature__item">
+                    <a>Холодно</a>
+                </li>
+                <li class="temperature__item">
+                    <a>Тепло</a>
+                </li>
+                <li class="temperature__item">
+                    <a>Жарко</a>
+                </li>
+            </ul>
+            <div class="temperature__termostat">
+                <div class="temperature__slider"></div>
+            </div>
+        </div>
+        <div class="temperature__buttons">
+            <button class="temperature__button temperature__button--apply">Применить</button>
+            <button class="temperature__button">Закрыть</button>
+        </div>
+    </section>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

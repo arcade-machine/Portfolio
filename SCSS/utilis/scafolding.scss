@@ -3,6 +3,15 @@
   font-weight: normal;
   font-style: normal;
   src: url("../fonts/Rufina-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+img {
+  max-width: 100%;
+}
+
+.visually-hidden {
+  display: none;
 }
 
 .container {
@@ -16,9 +25,9 @@
 
 .container__footer {
   min-width: 475px;
-  background-color: #605a58;
   margin: 0;
   padding: 0;
+  background-color: #605a58;
 }
 
 body {

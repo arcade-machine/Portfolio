@@ -1,0 +1,32 @@
+[
+  {
+    "preview": "previews/yandex-home/index.html",
+    "src": "img/yandex-home-preview-mini.jpg",
+    "alt": "Yandex-home-preview",
+    "gitLink": "https://github.com/arcade-machine/yandex-task2"
+  },
+  {
+    "preview": "previews/M-18/index.html",
+    "src": "img/fix-remont-min.png",
+    "alt": "M-18-preview",
+    "gitLink": "https://github.com/arcade-machine/M18-test"
+  },
+  {
+    "preview": "previews/cakes/index.html",
+    "src": "img/cakes-preview-mini.jpg",
+    "alt": "Cakes-preview",
+    "gitLink": "https://github.com/arcade-machine/cakes"
+  },
+  {
+    "preview": "https://htmlacademy-adaptive.github.io/320725-mishka/10/",
+    "src": "img/mishka-preview-mini.jpg",
+    "alt": "Mishka-preview",
+    "gitLink": "https://github.com/arcade-machine/mishka"
+  },
+  {
+    "preview": "previews/device/index.html",
+    "src": "img/device-preview.jpg",
+    "alt": "Device-preview",
+    "gitLink": "https://github.com/arcade-machine/device"
+  }
+]
