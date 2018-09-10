@@ -1,5 +1,11 @@
 [
   {
+    "preview": "previews/cruises/index.html",
+    "src": "img/cruises-preview-mini.jpg",
+    "alt": "Cruises-preview",
+    "gitLink": "https://github.com/arcade-machine/cruises"
+  },
+  {
     "preview": "previews/yandex-home/index.html",
     "src": "img/yandex-home-preview-mini.jpg",
     "alt": "Yandex-home-preview",
