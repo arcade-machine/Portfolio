@@ -1,7 +1,7 @@
-const myWorksJson = "js/my-works.json";
-const myWorksList = document.querySelector(".my-works");
-const myWorksTemplate = document.querySelector(".my-works--template");
-const cardTemplate = myWorksTemplate.content.querySelector(".my-works__item");
+var myWorksJson = "js/my-works.json";
+var myWorksList = document.querySelector(".my-works");
+var myWorksTemplate = document.querySelector(".my-works--template");
+var cardTemplate = myWorksTemplate.content.querySelector(".my-works__item");
 
 window.load = function() {
     var xhr = new XMLHttpRequest();

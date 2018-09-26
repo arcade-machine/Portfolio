@@ -21,6 +21,7 @@
   -o-filter: grayscale(100%);
   -ms-filter: grayscale(100%);
   filter: grayscale(100%);
+  transition: all 0.2s ease;
 
   & a {
     display: block;

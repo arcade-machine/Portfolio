@@ -1,0 +1,41 @@
+[
+  {
+    "language": "RU",
+    "portfolio": "Портфолио",
+    "aboutMe": "Обо мне",
+    "linkContacts": "Контакты",
+    "languageType": "Язык",
+    "bioName": "Сергей Леонов",
+    "bioLocation": "Санкт-Петербург, Россия",
+    "bioAbout": "Junior front-end разработчик. На данный момент, я усиленно ищу работу. Если у вас есть какие-то предложения - дайте знать.",
+    "contactsHeader": "Контакты",
+    "contactsEmail": "Вы можете связаться со мной по почте: <span class='contacts__mail-hover'>agrael@yandex.ru</span>",
+    "contactsPhone": "Или позвонить по телефону: <span class='contacts__phone-hover'>+7-981-107-58-65</span>"
+  },
+  {
+    "language": "EN",
+    "portfolio": "Portfolio",
+    "aboutMe": "About me",
+    "linkContacts": "Contacts",
+    "languageType": "Language",
+    "bioName": "Sergey Leonov",
+    "bioLocation": "Saint-Petersburg, Russia",
+    "bioAbout": "Junior front-end developer. Right now I'm actively looking for work. Feel free to contact me.",
+    "contactsHeader": "Contacts",
+    "contactsEmail": "You can contact me via email: <span class='contacts__mail-hover'>agrael@yandex.ru</span>",
+    "contactsPhone": "Or just give me a call: <span class='contacts__phone-hover'>+7-981-107-58-65</span>"
+  },
+  {
+    "language": "URD",
+    "portfolio": "پورٹ فولیو",
+    "aboutMe": "میرے بارے میں",
+    "linkContacts": "رابطے",
+    "languageType": "زبان",
+    "bioName": "Sergey Leonov",
+    "bioLocation": "سینٹ پیٹرزبرگ، روس",
+    "bioAbout": "جونیئر سامنے کے آخر میں ڈویلپر. ابھی میں فعال طور پر کام کی تلاش کر رہا ہوں. مجھ سے بلا جھجھک رابطہ کیجئے.",
+    "contactsHeader": "رابطے",
+    "contactsEmail": "آپ ای میل کے ذریعے مجھ سے رابطہ کر سکتے ہیں: <span class='contacts__mail-hover'>agrael@yandex.ru</span>",
+    "contactsPhone": "یا صرف مجھے ایک کال کرو: <span class='contacts__phone-hover'>+7-981-107-58-65</span>"
+  }
+]
