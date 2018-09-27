@@ -322,7 +322,7 @@
 .language {
   position: absolute;
   top: 0;
-  right: 0; }
+  right: 5%; }
 
 .language--open .language__list {
   display: block; }
@@ -372,6 +372,10 @@
   src: url("../fonts/Rufina-Regular.woff2") format("woff2");
   font-display: swap; }
 
+body {
+  margin: 0;
+  padding: 0; }
+
 img {
   max-width: 100%; }
 
@@ -392,6 +396,43 @@ img {
   padding: 0;
   background-color: #605a58; }
 
-body {
-  margin: 0;
-  padding: 0; }
+.container--rtl .navigation__item:nth-child(1) {
+  order: -1; }
+
+.container--rtl .navigation__item:nth-child(2) {
+  order: -2; }
+
+.container--rtl .navigation__item:nth-child(3) {
+  order: -3; }
+
+.container__footer--rtl .contacts {
+  order: -1; }
+
+.container__footer--rtl .contacts__header {
+  text-align: right; }
+
+.container__footer--rtl .contacts__email {
+  text-align: right; }
+
+.container__footer--rtl .contacts__phone {
+  text-align: right; }
+
+.container__footer--rtl .bio {
+  text-align: right; }
+
+.container__footer--rtl .bio__info {
+  order: -1;
+  margin-right: 15px; }
+
+.container__footer--rtl .bio__wrapper {
+  justify-content: flex-end; }
+
+.container__footer--rtl .bio__location {
+  padding-left: 0;
+  padding-right: 15px; }
+
+.container__footer--rtl .bio__location::before {
+  left: calc(100% - 12px); }
+
+.container__footer--rtl .social {
+  justify-content: flex-end; }

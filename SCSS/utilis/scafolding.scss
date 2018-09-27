@@ -6,6 +6,11 @@
   font-display: swap;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 img {
   max-width: 100%;
 }
@@ -30,7 +35,61 @@ img {
   background-color: #605a58;
 }
 
-body {
-  margin: 0;
-  padding: 0;
+.container--rtl {
+    & .navigation__item:nth-child(1) {
+        order: -1;
+    }
+    
+    & .navigation__item:nth-child(2) {
+        order: -2;
+    }
+    
+    & .navigation__item:nth-child(3) {
+        order: -3;
+    }
 }
+
+.container__footer--rtl {
+    & .contacts {
+        order: -1;
+    }
+    
+    & .contacts__header {
+        text-align: right;
+    }
+    
+    & .contacts__email {
+        text-align: right;
+    }
+    
+    & .contacts__phone {
+        text-align: right;
+    }
+    
+    & .bio {
+        text-align: right;
+    }
+    
+    & .bio__info {
+        order: -1;
+        margin-right: 15px;
+    }
+    
+    & .bio__wrapper {
+        justify-content: flex-end;
+    }
+    
+    & .bio__location {
+        padding-left: 0;
+        padding-right: 15px;
+    }
+    
+    & .bio__location::before {
+        left: calc(100% - 12px);
+    }
+    
+    & .social {
+        justify-content: flex-end;
+    }
+}
+

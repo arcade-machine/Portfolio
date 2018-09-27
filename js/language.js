@@ -37,6 +37,13 @@ var languageSwitch = function(language, langClick) {
     langClick.addEventListener("click", function () {
         for (var i = 0; i < language.length; i++) {
             if (language[i].language === langClick.innerHTML) {
+                if (language[i].language === "URD") {
+                    document.querySelector(".container").classList.add("container--rtl")
+                    document.querySelector(".container__footer").classList.add("container__footer--rtl")
+                } else {
+                    document.querySelector(".container").classList.remove("container--rtl")
+                    document.querySelector(".container__footer").classList.remove("container__footer--rtl")
+                }
                 languageSection.classList.remove("language--open");
                 document.querySelector(".navigation__link--portfolio").textContent = language[i].portfolio;
                 document.querySelector(".navigation__link--about-me").textContent = language[i].aboutMe;
